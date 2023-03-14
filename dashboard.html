@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registration Page</title>
+    <link rel="stylesheet" href="./Styles/dashboard.css">
+</head>
+<body>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Registration Page</a></li>
+            <li><a href="dashboard.html">Dashboard Page</a></li>
+            <li><a href="vaccinated.html">Vaccinated Page</a></li>
+        </ul>
+    </nav>
+
+    <br>
+
+    <form>
+        <label for="filter-vaccine">Filter by Vaccine:</label>
+        <select id="filter-vaccine" >
+            <option value="">All</option>
+            <option value="Covishield">Covishield</option>
+            <option value="Covaxin">Covaxin</option>
+            <option value="Sputnik">Sputnik</option>
+        </select>
+       
+		<label for="sort-age">Sort by Age:</label>
+		<select id="sort-age">
+    <option value="">Sort By Age</option>
+    <option value="low">Low To High</option>
+    <option value="high">High To Low</option>
+  </select>
+		
+        <label for="filter-priority">Filter by Priority:</label>
+        
+                <select id="filter-priority" >
+                    <option value="">All</option>
+                    <option value="p0">p0</option>
+                    <option value="p1">p1</option>
+                    <option value="p2">p2</option>
+                    <option value="p3">p3</option>
+                </select>
+                </form>
+    <div class="tab">
+
+    <table id="users-table">
+        <thead>
+            <tr>
+                <th>Unique ID</th>
+                <th>Name</th>
+                <th>Age</th>
+                <th>Designation</th>
+                <th>Priority</th>
+                <th>Vaccine</th>
+                <th>OTP</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            
+        </tbody>
+    </table>
+    
+    </div>
+    
+
+</body>
+<script src="./Scripts/dashboard.js"></script>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registration Page</title>
+    <link rel="stylesheet" href="./Styles/index.css">
+</head>
+<body>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Registration Page</a></li>
+            <li><a href="dashboard.html">Dashboard Page</a></li>
+            <li><a href="vaccinated.html">Vaccinated Page</a></li>
+        </ul>
+    </nav>
+    
+    <h1>Vaccine Registration Form</h1>
+    <div class="container">
+    <form id="registration-form">
+        <table>
+        <tr>
+           <td> <label for="unique-id">Unique ID:</label>
+           </td>
+           <td> <input type="text" id="unique-id" name="unique-id" >
+           </td>
+         </tr>
+        
+         <tr>
+        <td><label for="name">Name:</label></td>
+        <td><input type="text" id="name" name="name"  minlength="4">
+        </td>
+        </tr>
+       
+        <tr>
+            <td><label for="age">Age:</label></td>
+            <td><input type="number" id="age" name="age"></td>
+    </tr>
+       
+        <tr>
+            <td><label for="designation">Designation:</label></td>
+                <td><input type="radio" id="employee" name="designation" value="employee" >
+        <label for="employee">Employee</label>
+        <input type="radio" id="student" name="designation" value="student" >
+        <label for="student">Student</label></td>
+    </tr>
+        
+        <tr>
+            <td><label for="priority">Priority:</label></td>
+            <td><select id="priority">
+            <option value="p0">p0</option>
+            <option value="p1">p1</option>
+            <option value="p2">p2</option>
+            <option value="p3">p3</option>
+        </select></td>
+    </tr>
+       
+        <tr>
+            <td><label for="vaccine">Vaccine:</label></td>
+                <td><select id="vaccine">
+            <option value="Covishield">Covishield</option>
+            <option value="Covaxin">Covaxin</option>
+            <option value="Sputnik">Sputnik</option>
+        </select></td>
+    </tr>
+    </table>
+        
+        <button type="submit">Register</button>
+    </form>
+    </div>
+
+</body>
+<script src="./Scripts/index.js"></script>
+</html>
